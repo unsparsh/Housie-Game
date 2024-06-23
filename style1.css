@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+.container {
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    color: white;
+    display: flex;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        justify-content:  center;
+        align-items: center;
+    }
+    .leftPart, .rightPart {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+.leftPart, .rightPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.leftPart {
+    width: 50%;
+    font-family: cursive;
+}
+
+.leftPart h1 {
+    font-size: 3.5vw; /* Responsive font size */
+}
+
+.leftPart h3 {
+    font-size: 2vw; /* Responsive font size */
+}
+
+.leftPart p {
+    font-size: 1.5vw; /* Responsive font size */
+    margin-top: 20px; /* Add some spacing */
+}
+
+.button-19 {
+    background-color: #1899D6;
+    border: none;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-size: 1.5vw; /* Responsive font size */
+    font-weight: 700;
+    padding: 13px 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: filter .2s;
+    width: 60%;
+    max-width: 200px; /* Limit maximum width */
+}
+
+.button-19:hover {
+    filter: brightness(1.1);
+}
+
+.rightPart {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightPart > img {
+    max-width: 100%; /* Ensure image doesn't overflow its container */
+    height: auto;
+}
+
+/* This is the CSS for the Page1 */
+/* Body styles for gradient background */
+body {
+  /* Gradient background */
+  background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+  min-height: 100vh;
+  margin: 0;
+  /* Ensures content starts at the top */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Main container styles */
+.main {
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Example: semi-transparent white background */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container {
+    color: white;
+    display: grid;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  .grid-item>button{
+    color: #000;
+    border: none;
+    /* background-color: white; */
+    font-size: 2rem;
+    cursor: pointer;
+    
+  }
+
+
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
+
+
+  .main2{
+    background-image: url(Winner.png);
+    background-repeat: no-repeat;
+    background-size: 250vh 50vw;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+  }
+
+
+  .button-30 {
+    align-items: center;
+    appearance: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: cursive;
+    height: 48px;
+    justify-content: center;
+    /* line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform; */
+    font-size: 18px;
+    margin-top: 83vh;
+    margin-left: 46vw;
+  }
+  
+  .button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+  .button-30>a{
+    text-decoration: none;
+    color: #ffffff00;
+
+  }
+  .num{
+    font-size: 6vh;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    font-family: cursive;
+    /* padding-top: 18vh; */
+  }
+  #randomNumber{
+    color: white;
+    font-size: 8vh;
+    padding: 1vh;
+  
+  }
+  .crossed {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+/* Style for the awards buttons */
+.awards .button-56 {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline-block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect */
+.awards .button-56:hover {
+  background-color: #45a049; /* Darker green */
+  transform: scale(1.05); /* Slightly larger */
+}
+
+/* Add a bit of margin around the buttons */
+.awards {
+  margin-top: 20px;
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 30px; /* Space between buttons */
+  justify-content: center;
+}
+
+/* Ensure anchor tags within buttons don't inherit button styles */
+.awards .button-56 a {
+  color: white; /* Inherit the button text color */
+  text-decoration: none; /* Remove underline */
+}
